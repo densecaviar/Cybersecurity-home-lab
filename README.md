@@ -26,22 +26,8 @@ This lab uses three dedicated physical systems with distinct operational roles:
 
 
 
-**Setup Architecture**
-                     ┌──────────────┐
-                     │  **Odin**    |
-                     │  macOS M3    │
-                     │ Observer/SOC │
-                     └──────┬───────┘
-                            │
-Internet ────Router -----───|
-                            │
-              ┌─────────────┴─────────────┐
-              │                           │
-      ┌───────▼────────┐         ┌────────▼────────┐
-      │   **Atlas**    │         │    **Hades**    │
-      │ Debian Server  │         │ Kali Linux      │
-      │ Target Machine │         │ Attacker Machine│
-      └────────────────┘         └─────────────────┘
+# Setup Architecture
+      
 
 
 
