@@ -47,7 +47,43 @@ This lab uses three dedicated physical systems with distinct operational roles:
 - Document findings and mitigations
 
 
-#Documents
+
+### Networking
+
+- TCP/IP
+- Static IPv4 Addressing
+- SSH
+- ED25519 Public Key Authentication
+
+### Security Tools
+
+- OpenSSH
+- Nmap
+- Hydra
+- Wireshark
+- UFW
+- Fail2Ban
+
+*(More tools will be added as the project progresses.)*
+
+## Skills Demonstrated
+
+This project demonstrates practical experience with:
+
+- Linux Administration
+- Network Configuration
+- SSH Hardening
+- Public Key Authentication
+- Network Reconnaissance
+- Vulnerability Assessment
+- Password Auditing
+- Network Traffic Analysis
+- Security Documentation
+- Incident Reporting
+
+
+
+# Documents
 
 01-lab-setup.md
 02-ssh-configuration.md
