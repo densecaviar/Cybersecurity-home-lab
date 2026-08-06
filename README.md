@@ -47,4 +47,16 @@ This lab uses three dedicated physical systems with distinct operational roles:
 - Document findings and mitigations
 
 
+#Documents
+
+01-lab-setup.md
+02-ssh-configuration.md
+03-network-reconnaissance.md
+04-vulnerability-assessment.md
+05-hydra-attack.md
+06-server-hardening.md
+07-wireshark-analysis.md
+08-incident-response.md
+
+
 
