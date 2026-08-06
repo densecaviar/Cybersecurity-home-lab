@@ -27,11 +27,7 @@ This lab uses three dedicated physical systems with distinct operational roles:
 
 
 # Setup Architecture
-      <img width="1408" height="768" alt="image_c5db4342" src="https://github.com/user-attachments/assets/1c850b0c-5ee1-466d-a605-2ecb0ca8c126" />
-
-
-
-
+![Network Topology](images/network-topology.png)
 # Objectives
 
 - Design a segmented cybersecurity lab
