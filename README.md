@@ -85,14 +85,11 @@ This project demonstrates practical experience with:
 
 # Documents
 
-01-lab-setup.md
-02-ssh-configuration.md
-03-network-reconnaissance.md
-04-vulnerability-assessment.md
-05-hydra-attack.md
-06-server-hardening.md
-07-wireshark-analysis.md
-08-incident-response.md
-
-
-
+- [Lab Setup](docs/01-lab-setup.md)
+- [SSH Configuration](docs/02-ssh-configuration.md)
+- [Network Reconnaissance](docs/03-network-reconnaissance.md)
+- [Vulnerability Assessment](docs/04-vulnerability-assessment.md)
+- [Password Auditing](docs/05-password-auditing.md)
+- [Linux Hardening](docs/06-linux-hardening.md)
+- [Traffic Analysis](docs/07-traffic-analysis.md)
+- [Incident Report](docs/08-incident-report.md)
