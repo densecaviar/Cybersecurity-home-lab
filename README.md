@@ -26,7 +26,7 @@ This lab uses three dedicated physical systems with distinct operational roles:
 
 
 
-# Setup Architecture
+# Lab Architecture
 ![Network Topology](images/network-topology.png)
 # Objectives
 
@@ -45,6 +45,9 @@ This lab uses three dedicated physical systems with distinct operational roles:
 - Observe network traffic
   
 - Document findings and mitigations
+
+
+
 
 
 
