@@ -87,8 +87,6 @@ This project demonstrates practical experience with:
 
 
 # Project Phases
-|                    Phase                                                     Status
-
 | [01 - Network Configuration](docs/01-network-configuration.md)               | ⏳ |
 
 | [02 - Secure Remote Administration](docs/02-secure-remote-administration.md) | ⏳ |
