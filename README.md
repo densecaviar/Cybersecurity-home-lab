@@ -87,18 +87,20 @@ This project demonstrates practical experience with:
 
 
 # Project Phases
-| [01 - Network Configuration](docs/01-network-configuration.md) | ⏳ |
+|                    Phase                                                     Status
+
+| [01 - Network Configuration](docs/01-network-configuration.md)               | ⏳ |
 
 | [02 - Secure Remote Administration](docs/02-secure-remote-administration.md) | ⏳ |
 
-| [03 - Network Reconnaissance](docs/03-network-reconnaissance.md) | ⏳ |
+| [03 - Network Reconnaissance](docs/03-network-reconnaissance.md)             | ⏳ |
 
-| [04 - Vulnerability Assessment](docs/04-vulnerability-assessment.md) | ⏳ |
+| [04 - Vulnerability Assessment](docs/04-vulnerability-assessment.md)         | ⏳ |
 
-| [05 - Linux Hardening](docs/05-linux-hardening.md) | ⏳ |
+| [05 - Linux Hardening](docs/05-linux-hardening.md)                           | ⏳ |
 
-| [06 - Password Auditing](docs/06-password-auditing.md) | ⏳ |
+| [06 - Password Auditing](docs/06-password-auditing.md)                       | ⏳ |
 
-| [07 - Network Traffic Analysis](docs/07-network-traffic-analysis.md) | ⏳ |
+| [07 - Network Traffic Analysis](docs/07-network-traffic-analysis.md)         | ⏳ |
 
-| [08 - Incident Report](docs/08-incident-report.md) | ⏳ |
+| [08 - Incident Report](docs/08-incident-report.md)                           | ⏳ |
