@@ -30,7 +30,7 @@ Before configuring static IP addresses, the existing network configuration was e
 Since Atlas and Hades will function as remote systems administered over SSH, they require consistent IP addresses throughout the project. Predictable addressing simplifies remote administration, automation, and documentation.
 
 Odin, the observer workstation, does not require inbound SSH connections and therefore does not require manual static IP configuration. It communicates with the other hosts using their fixed addresses.
-
+```
 To verify Atlas's current network configuration, the following command was executed:
 `ip addr`
 Why this command?
@@ -49,6 +49,7 @@ The configuration file was opened using:
 `sudo nano /etc/network/interfaces`
 
 The network interface was then configured with a fixed IPv4 address to ensure Atlas consistently uses the same address across reboots.
+```
 
 ## Verification
 
