@@ -59,13 +59,46 @@ The network interface was then configured with a fixed IPv4 address to ensure At
 
 After applying the network configuration, connectivity between the laboratory systems was verified using ICMP echo requests.
 
-Successful communication was confirmed between:
 
-- Odin and Atlas
-- Odin and Hades
-- Atlas and Hades
-- Each host and the default gateway
+## Verify Connectivity
+
+Once both systems had been configured, network connectivity was verified using ICMP echo requests.
+
+From Atlas:
+
+```bash
+ping 192.168.1.20
+```
+
+**Purpose**
+
+Verify connectivity between Atlas and the observer workstation (Odin).
+
+---
+
+```bash
+ping 192.168.1.18
+```
+
+**Purpose**
+
+Verify connectivity between Atlas and the attacker workstation (Hades).
 
 The configured IP addresses remained consistent following a system reboot, confirming that the static configuration was applied successfully.
 
+The same connectivity tests were performed from Hades to confirm bidirectional communication between all hosts.
+
+Successful replies confirmed:
+
+- Correct IPv4 configuration
+- Layer 3 connectivity
+- Proper local network routing
+- Communication between all three physical systems
+
+Finally, each machine was rebooted and the `ip addr` command was executed again to verify that the configured IPv4 addresses persisted after restart.
+
+
 ## Lessons Learned
+Reliable network configuration is a prerequisite for nearly every cybersecurity task performed in this laboratory. Establishing predictable IPv4 addresses simplifies SSH administration, vulnerability scanning, traffic analysis, and future automation by ensuring that each host remains reachable at a known address throughout the project.
+
+This phase also reinforced the importance of verifying configuration changes rather than assuming they were applied successfully. Connectivity testing and post-reboot validation confirmed that the network was operating as intended before additional security tooling was introduced.
