@@ -89,7 +89,7 @@ This project demonstrates practical experience with:
 # Project Phases
 | [01 - Network Configuration](docs/01-network-configuration.md)               | ⏳ |
 
-| [02 - Secure Remote Administration](docs/02-secure-remote-administration.md) | ⏳ |
+| [02-SSH-Configuration-and-public-key-authentication.md](docs/02-SSH-Configuration-and-public-key-authentication.md) | ⏳ |
 
 | [03 - Network Reconnaissance](docs/03-network-reconnaissance.md)             | ⏳ |
 
