@@ -165,4 +165,63 @@ At no point is the private key transmitted across the network.
 
 The server simply verifies a cryptographic signature generated using the private key.
 
+### Configure SSH Client Aliases
+
+To simplify remote administration, an SSH client configuration file was created.
+
+```text
+~/.ssh/config
+```
+
+Configuration:
+
+```text
+Host atlas
+    HostName 192.168.1.7
+    User target
+    IdentityFile ~/.ssh/id_ed25519
+
+Host hades
+    HostName 192.168.1.18
+    User attacker
+    IdentityFile ~/.ssh/id_ed25519
+```
+
+The SSH client configuration associates memorable host aliases with connection details such as the hostname, username, and private key.
+
+This allows remote systems to be accessed using simple commands such as:
+
+```bash
+ssh atlas
+```
+
+instead of
+
+```bash
+ssh target@192.168.1.7
+```
+
+A single ED25519 key pair can authenticate to multiple servers provided each server stores the corresponding public key within its `authorized_keys` file.
+
+## Verification
+
+The following objectives were successfully completed:
+
+- OpenSSH server installed and operational
+- Remote SSH connectivity verified
+- ED25519 key pair generated
+- Public key installed on Atlas and Hades
+- Passwordless authentication functioning correctly
+- SSH aliases configured successfully
+
+## Lessons Learned
+
+This phase demonstrated the difference between authentication and encryption within SSH.
+
+Although ED25519 public/private key pairs are generated using asymmetric cryptography, they are used primarily to authenticate the client rather than encrypt the entire SSH session.
+
+Once authentication succeeds, SSH performs a secure key exchange to derive a shared symmetric session key. All subsequent communication is encrypted using efficient symmetric algorithms such as AES or ChaCha20.
+
+This design combines the identity verification provided by asymmetric cryptography with the performance advantages of symmetric encryption, allowing SSH to remain both secure and efficient.
+
 
