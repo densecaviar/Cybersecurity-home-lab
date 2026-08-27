@@ -69,8 +69,7 @@ Before performing network reconnaissance, the network configuration of Hades was
 ```bash
 ip addr
 ```
-
-
+![IP address](../images/ip-addr.png)
 
 Why?
 
@@ -88,6 +87,31 @@ The routing table was then examined:
 ``` bash
 ip route
 ```
+![IP Route](../images/ip-route.png)
+
+Why?
+
+The ip route command displays the routes known to the operating system.
+
+This was used to confirm the local subnet and identify the default gateway used by Hades.
+
+# 2. Host Discovery
+
+Nmap was used to discover active hosts on the local subnet:
+``` bash
+sudo nmap -sn 192.168.1.0/24
+```
+Why?
+
+The -sn option performs host discovery without performing a port scan.
+
+This allows the attacker machine to determine which hosts are currently reachable on the network before examining their individual services. This process is faster than scanning all the ports and avoids unnecessary delays in host discovery.
+
+Results
+
+The scan identified the laboratory hosts, including:
 
 
+Other devices belonging to the home network may also have appeared during host discovery.
 
+These devices were not included in the detailed assessment because they are outside the scope of this laboratory.
