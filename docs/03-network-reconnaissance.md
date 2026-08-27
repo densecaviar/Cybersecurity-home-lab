@@ -72,3 +72,22 @@ ip addr
 
 
 
+Why?
+
+The `ip addr` command displays the network interfaces and their assigned IP addresses.
+
+This allows the active network interface and IPv4 address assigned to Hades to be identified.
+
+Hades was configured with:
+``` bash
+192.168.1.18/24
+```
+The /24 prefix indicates that Hades belongs to the: `192.168.1.0/24` network.
+
+The routing table was then examined:
+``` bash
+ip route
+```
+
+
+
