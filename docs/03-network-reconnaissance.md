@@ -133,3 +133,26 @@ The purpose was to establish an initial understanding of which services were exp
 The scan identified the following open ports:
 ![Nmap port scan results](../images/nmap-atlas.png)
 
+## Interpretation
+
+An open port indicates that a service is listening for network connections.
+
+An open port does not automatically indicate a vulnerability.
+
+For example:
+`22/tcp open ssh` indicates that an SSH service is accessible, but further investigation is required to determine whether the service is securely configured and whether it contains any known vulnerabilities.
+
+# 4. Services and Version Detection
+After identifying the open ports, Nmap was used to determine which services and software versions were associated with those ports:
+``` bash
+sudo nmap -sV 192.168.1.7
+```
+Why?
+
+The `-sV` option enables service and version detection.
+This provides additional information about the software listening on discovered ports.
+
+Results
+
+The scan identified the following services:
+![nmap -sV ](../images/nmap-sV.png)
