@@ -116,3 +116,20 @@ The scan identified the laboratory hosts, including:
 Other devices belonging to the home network may also have appeared during host discovery.
 
 These devices were not included in the detailed assessment because they are outside the scope of this laboratory.
+
+# 3.Initial Port Scan
+
+After identifying Atlas as the target system, a basic Nmap scan was performed:
+``` bash
+sudo nmap 192.168.1.7
+```
+Why?
+
+This performs a basic scan of Nmap's commonly scanned TCP ports.
+
+The purpose was to establish an initial understanding of which services were exposed by Atlas.
+
+## Results
+The scan identified the following open ports:
+![Nmap port scan results](../images/nmap-atlas.png)
+
