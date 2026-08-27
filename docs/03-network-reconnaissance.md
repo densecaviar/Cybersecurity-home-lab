@@ -152,7 +152,57 @@ Why?
 The `-sV` option enables service and version detection.
 This provides additional information about the software listening on discovered ports.
 
-Results
+## Results
 
 The scan identified the following services:
 ![nmap -sV ](../images/nmap-sV.png)
+
+## Interpretation
+
+Service and version information provides useful context for subsequent vulnerability assessment.
+
+For example, identifying a specific OpenSSH version allows that software version to be investigated for known vulnerabilities and security advisories.
+
+However, the presence of a particular software version does not by itself establish that the system is vulnerable.
+
+Further assessment is required.
+
+
+## Security Considerations
+
+Reconnaissance results should not automatically be interpreted as evidence of a vulnerability.
+
+An exposed service may be intentional and properly secured.
+A security analyst must therefore distinguish between:
+
+- An exposed service
+- A misconfigured service
+- An outdated service
+- A vulnerable service
+
+These are related but distinct findings.
+
+## Lessons Learned
+
+This phase demonstrated the importance of reconnaissance as the foundation of a security assessment.
+
+Key lessons learned include:
+
+- Network reconnaissance should begin by understanding the network scope.
+- Host discovery identifies systems before individual services are examined.
+- Open ports reveal the network-accessible attack surface.
+- Service detection provides additional information about exposed services.
+- A service being exposed does not necessarily mean that it is vulnerable.
+- Full port scans can identify services operating on uncommon ports.
+- Service and version information can provide useful context for vulnerability assessment.
+- Reconnaissance results should be documented as evidence rather than treated as assumptions.
+
+Most importantly, this phase demonstrated the difference between discovering an attack surface and determining whether that attack surface is vulnerable.
+
+## Conclusion
+
+Network reconnaissance successfully established a baseline of the laboratory environment from the perspective of the Hades attacker machine.
+
+The process identified active hosts, exposed ports, and network services that can now be investigated during the vulnerability assessment phase.
+
+The results from this phase will be used to determine which services require further investigation and which security controls should be applied during later hardening activities.
