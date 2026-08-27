@@ -110,6 +110,7 @@ This allows the attacker machine to determine which hosts are currently reachabl
 Results
 
 The scan identified the laboratory hosts, including:
+![nmap -sn results](../images/nmap-sn1.png)
 
 
 Other devices belonging to the home network may also have appeared during host discovery.
