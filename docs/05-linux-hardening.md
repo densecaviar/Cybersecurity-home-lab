@@ -46,12 +46,16 @@ The package repositories were first updated:
 ``` bash
 sudo apt update
 ```
+![atlas updatable packages](../images/atlas-update.png)
+
+
 `apt update` retrieves the latest package information from the configured Debian repositories.
 
 The available package upgrades were then installed:
 ``` bash
 sudo apt upgrade
 ```
+![atlas upgradable packages](../images/atlas-upgrade.png)
 
 `apt upgrade` installs available package updates.
 
@@ -63,6 +67,7 @@ The effective SSH server configuration was examined using:
 ``` bash
 sudo sshd -T
 ```
+
 
 `sshd -T` displays the effective configuration used by the OpenSSH server after configuration files and defaults have been processed.
 This provides a reliable way to audit the SSH configuration.
