@@ -134,7 +134,7 @@ sudo ufw status verbose
 ```
 ## Results
 
-![firewall enabled](../images/firewall-enabled)
+![firewall enabled](../images/firewall-enabled.png)
 
 The firewall was successfully enabled with SSH permitted.
 
