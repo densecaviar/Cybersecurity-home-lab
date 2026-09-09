@@ -35,12 +35,12 @@ The hardening process will follow these stages:
 6. Compare the results against the original baseline.
 7. Document the security improvements.
 
-## 1. Establishing the Baseline
+
 
 Before making any changes, the current configuration of Atlas was documented.
 This provides a reference point for comparing the system before and after hardening.
 
-### 1.1 Update the System
+## Update the System
 
 The package repositories were first updated:
 ``` bash
@@ -61,7 +61,7 @@ sudo apt upgrade
 
 Keeping the operating system and installed software updated is an important component of vulnerability management because security updates frequently contain patches for known vulnerabilities.
 
-2. Review SSH Configuration
+## Review SSH Configuration
 
 The effective SSH server configuration was examined using:
 ``` bash
@@ -80,7 +80,7 @@ Public key authentication,
 Maximum authentication attempts,
 and Protocol configuration.
 
-## 3. Review Firewall Configuration
+## Review Firewall Configuration
 
 The current firewall configuration was checked using:
 ``` bash
@@ -92,7 +92,7 @@ sudo ufw status verbose
 UFW (Uncomplicated Firewall) provides a simplified interface for managing Linux firewall rules.
 The command displays whether the firewall is active and shows the currently configured rules.
 
-4. Identify Listening Services
+## Identify Listening Services
 The services currently listening for network connections were identified using:
 ``` bash
 sudo ss -tulpn
@@ -111,5 +111,69 @@ The options used here provide information about:
 
 This allows the system's network attack surface to be examined.
 
+## Configure UFW Firewall
+
+The firewall on `Atlas` was initially disabled.
+
+Since SSH is required for remote administration, an SSH rule was added before enabling the firewall:
+
+```bash
+sudo ufw allow ssh
+```
+This allows incoming SSH connections while the firewall is active.
+
+The firewall was then enabled:
+
+```bash
+sudo ufw enable
+```
+The configuration was verified using:
+
+```bash
+sudo ufw status verbose
+```
+## Results
+
+![firewall enabled](../images/firewall-enabled)
+
+The firewall was successfully enabled with SSH permitted.
+
+** 6. Install Fail2Ban
+
+Fail2Ban was installed to provide additional protection against repeated failed authentication attempts.
+
+The package was installed using:
+```bash
+sudo apt install fail2ban
+```
+Fail2Ban was then enabled and started:
+
+```bash
+sudo systemctl enable --now fail2ban
+```
 
 
+The service was verified with:
+
+```bash
+sudo systemctl status fail2ban
+```
+
+## Verification
+
+The final security configuration was verified using the following commands:
+```bash
+sudo ufw status verbose
+sudo fail2ban-client status sshd
+sudo ss -tulpn
+```
+** Lessons Learned
+
+This phase demonstrated how basic host-level security controls can reduce the attack surface of a Linux system.
+
+The primary controls implemented were:
+
+UFW firewall
+SSH access restricted through the firewall,Fail2Ban for SSH brute-force protection,Continued monitoring and application of security updates.
+
+These controls provide a basic layer of defense while maintaining the functionality required for remote administration.
