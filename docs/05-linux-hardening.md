@@ -73,12 +73,12 @@ sudo sshd -T
 This provides a reliable way to audit the SSH configuration.
 The output was reviewed to identify security-relevant settings such as:
 
-Authentication methods
-Root login
-Password authentication
-Public key authentication
-Maximum authentication attempts
-Protocol configuration
+Authentication methods,
+Root login,
+Password authentication,
+Public key authentication,
+Maximum authentication attempts,
+and Protocol configuration.
 
 ## 3. Review Firewall Configuration
 
@@ -86,6 +86,9 @@ The current firewall configuration was checked using:
 ``` bash
 sudo ufw status verbose
 ```
+
+![firewall status](../images/firewall-status.png)
+
 UFW (Uncomplicated Firewall) provides a simplified interface for managing Linux firewall rules.
 The command displays whether the firewall is active and shows the currently configured rules.
 
@@ -94,6 +97,8 @@ The services currently listening for network connections were identified using:
 ``` bash
 sudo ss -tulpn
 ```
+![network sockets](../images/network-sockets.png)
+
 The ss command provides information about network sockets.
 
 The options used here provide information about:
@@ -105,5 +110,6 @@ The options used here provide information about:
 -n — Display numerical addresses and ports
 
 This allows the system's network attack surface to be examined.
+
 
 
