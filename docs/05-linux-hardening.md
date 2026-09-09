@@ -138,7 +138,7 @@ sudo ufw status verbose
 
 The firewall was successfully enabled with SSH permitted.
 
-** 6. Install Fail2Ban
+## 6. Install Fail2Ban
 
 Fail2Ban was installed to provide additional protection against repeated failed authentication attempts.
 
@@ -158,6 +158,7 @@ The service was verified with:
 ```bash
 sudo systemctl status fail2ban
 ```
+![fail2ban](../images/fail2ban-status.png)
 
 ## Verification
 
@@ -167,7 +168,7 @@ sudo ufw status verbose
 sudo fail2ban-client status sshd
 sudo ss -tulpn
 ```
-** Lessons Learned
+## Lessons Learned
 
 This phase demonstrated how basic host-level security controls can reduce the attack surface of a Linux system.
 
