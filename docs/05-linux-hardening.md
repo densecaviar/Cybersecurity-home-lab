@@ -174,7 +174,6 @@ This phase demonstrated how basic host-level security controls can reduce the at
 
 The primary controls implemented were:
 
-UFW firewall
-SSH access restricted through the firewall,Fail2Ban for SSH brute-force protection,Continued monitoring and application of security updates.
+UFW firewall: SSH access restricted through the firewall, Fail2Ban for SSH brute-force protection, Continued monitoring and application of security updates.
 
 These controls provide a basic layer of defense while maintaining the functionality required for remote administration.
