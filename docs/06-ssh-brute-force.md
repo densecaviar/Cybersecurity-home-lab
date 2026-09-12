@@ -103,7 +103,7 @@ The Wazuh agent was also running on Atlas during the attack, allowing these auth
 Example SSH-related events observed in the Atlas logs included repeated connection and authentication activity originating from the attacker.
 
 
-![terminal SSH logs from Atlas ](..images/atlas-ssh-logs.png)
+![terminal SSH logs from Atlas ](../images/atlas-ssh-logs.png)
 Figure 2 — SSH authentication activity recorded on the Atlas target.
 
 
