@@ -97,7 +97,7 @@ This project demonstrates practical experience with:
 
 | [05 - Linux Hardening](docs/05-linux-hardening.md)                           
 
-| [06 - Password Auditing](docs/06-ssh-brute-force.md)                       
+| [06 - SSH Brute Force Attack](docs/06-ssh-brute-force.md)                       
 
 | [07 - Network Traffic Analysis](docs/07-network-traffic-analysis.md)        
 
