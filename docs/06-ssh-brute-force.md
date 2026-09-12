@@ -44,7 +44,7 @@ The password list used was rockyou.txt, which is available on Kali Linux under:
 
 `/usr/share/wordlists/rockyou.txt`
 
-Launching the Attack
+## Launching the Attack
 
 The following command was executed from Hades:
 
@@ -79,7 +79,7 @@ The attack was monitored simultaneously from multiple perspectives.
 
 This created three complementary sources of evidence:
 
-1. Attacker — Hades
+### 1. Attacker — Hades
 
 Hydra provided evidence that the authentication attempts were actively being generated. See Launching the Attack for details.
 
@@ -94,7 +94,7 @@ Number of login attempts
 Attack rate
 Attack duration
 
-2. Target — Atlas
+### 2. Target — Atlas
 
 Atlas recorded the resulting SSH authentication activity locally.
 
