@@ -89,7 +89,7 @@ This project demonstrates practical experience with:
 # Project Phases
 | [01 - Network Configuration](docs/01-network-configuration.md)               | ⏳ |
 
-| [02-SSH-Configuration-and-public-key-authentication.md](docs/02-SSH-Configuration-and-Public-Key-Authentication.md) | ⏳ |
+| [02-SSH-Configuration-and-public-key-authentication.md](docs/02-SSH-Configuration-and-Public-Key-Authentication.md)                                                             | ⏳ |
 
 | [03 - Network Reconnaissance](docs/03-network-reconnaissance.md)             | ⏳ |
 
@@ -97,7 +97,7 @@ This project demonstrates practical experience with:
 
 | [05 - Linux Hardening](docs/05-linux-hardening.md)                           | ⏳ |
 
-| [06 - Password Auditing](docs/06-password-auditing.md)                       | ⏳ |
+| [06 - Password Auditing](docs/06-ssh-brute-force.md)                         | ⏳ |
 
 | [07 - Network Traffic Analysis](docs/07-network-traffic-analysis.md)         | ⏳ |
 
