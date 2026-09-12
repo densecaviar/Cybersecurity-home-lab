@@ -87,18 +87,18 @@ This project demonstrates practical experience with:
 
 
 # Project Phases
-| [01 - Network Configuration](docs/01-network-configuration.md)               | ⏳ |
+| [01 - Network Configuration](docs/01-network-configuration.md)               
 
-| [02-SSH-Configuration-and-public-key-authentication.md](docs/02-SSH-Configuration-and-Public-Key-Authentication.md)                                                             | ⏳ |
+| [02-SSH-Configuration-and-public-key-authentication.md](docs/02-SSH-Configuration-and-Public-Key-Authentication.md)                                                             
 
-| [03 - Network Reconnaissance](docs/03-network-reconnaissance.md)             | ⏳ |
+| [03 - Network Reconnaissance](docs/03-network-reconnaissance.md)             
 
-| [04 - Vulnerability Assessment](docs/04-vulnerability-assessment.md)         | ⏳ |
+| [04 - Vulnerability Assessment](docs/04-vulnerability-assessment.md)        
 
-| [05 - Linux Hardening](docs/05-linux-hardening.md)                           | ⏳ |
+| [05 - Linux Hardening](docs/05-linux-hardening.md)                           
 
-| [06 - Password Auditing](docs/06-ssh-brute-force.md)                         | ⏳ |
+| [06 - Password Auditing](docs/06-ssh-brute-force.md)                       
 
-| [07 - Network Traffic Analysis](docs/07-network-traffic-analysis.md)         | ⏳ |
+| [07 - Network Traffic Analysis](docs/07-network-traffic-analysis.md)        
 
-| [08 - Incident Report](docs/08-incident-report.md)                           | ⏳ |
+| [08 - Incident Report](docs/08-incident-report.md)                           
