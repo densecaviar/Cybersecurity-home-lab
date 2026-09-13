@@ -97,9 +97,8 @@ This allowed the activity to be characterized as an authentication attack rather
 
 Brute-Force Detection
 
-Wazuh also identified activity consistent with SSH brute-force behavior.
-
-The number of events classified as brute-force activity was smaller than the total number of SSH attempts and password-guessing events.
+Wazuh also identified activity consistent with SSH brute-force behavior. 
+The number of events classified as brute-force activity was smaller than the total number of SSH attempts and password-guessing events. Wazuh identified patterns in these recurring events as multiple brute force attempts and in the process classified a group of these attacks as an individual brute force event. 
 
 ![Wazuh brute force attack ](../images/wazuh-brute.png)
 Figure 4. Wazuh detection of SSH brute-force activity.
