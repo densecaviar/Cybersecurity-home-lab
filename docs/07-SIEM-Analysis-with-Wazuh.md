@@ -57,3 +57,22 @@ Atlas was operating under normal laboratory conditions.
 
 ![atlas baseline wazuh](../images/atlas-baseline.png)
 Figure 1. Atlas baseline state before the SSH brute-force attack.
+
+The baseline is important because security monitoring is primarily concerned with identifying deviations from normal system behavior.
+
+Attack Activity Observed by Wazuh
+
+Following the SSH password-guessing attack performed during Phase 6, the Wazuh Dashboard showed a significant increase in SSH-related activity.
+
+The attack generated repeated authentication attempts against the `target` account on Atlas.
+
+The resulting Wazuh data showed a noticeable increase in:
+
+SSH connection attempts
+Authentication failures
+Password-guessing activity
+Brute-force related events
+
+![wazuh brute force](../images/wazuh-brute-force.png)
+
+Figure 2. Wazuh dashboard showing SSH-related activity during the attack.
