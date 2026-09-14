@@ -87,7 +87,7 @@ The resulting capture file was:
 
 The PCAP file contains the packets captured by Hades during the attack.
 
-![stop tcpdump](../images/stop-tcpdump.png)
+
 
 
 The following secure copy command was used to copy the .pcap file from Hades to Odin.
@@ -102,6 +102,7 @@ The capture file was verified using:
 
 This command confirms that the PCAP file exists and displays its size.
 
+![stop tcpdump](../images/stop-tcpdump.png)
 ## Wireshark Analysis
 
 The transferred ssh-bruteforce.pcap file was opened using Wireshark on Odin.
