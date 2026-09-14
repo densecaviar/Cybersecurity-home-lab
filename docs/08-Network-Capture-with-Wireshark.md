@@ -81,12 +81,15 @@ The capture file was verified using:
 `ls -lh ssh-bruteforce.pcap`
 This command confirms that the PCAP file exists and displays its size.
 ![stop tcpdump](../images/stop-tcpdump.png)
+
 ## Wireshark Analysis
 
 The transferred ssh-bruteforce.pcap file was opened using Wireshark on Odin.
 Wireshark provided a graphical interface for examining the packets captured by tcpdump.
 The first Wireshark display filter used was:
+
 `ip.addr == 192.168.1.18 && ip.addr == 192.168.1.7`
+
 This filter displays packets involving both Hades and Atlas.
 ![Hades brute](../images/wireshark-ip.png)
 
@@ -97,7 +100,9 @@ Atlas  →  192.168.1.7
 
 The filter helped isolate traffic associated with the attacker and target from other packets that may have been present in the capture.
 The attacker and target addresses can also be combined with the SSH port filter:
+
 `ip.addr == 192.168.1.18 && ip.addr == 192.168.1.7 && tcp.port == 22`
+
 This produced a more focused view of SSH communication between Hades and Atlas.
 
 ![Wireshark SSH filter](../images/wireshark-ssh.png)
