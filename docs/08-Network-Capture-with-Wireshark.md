@@ -3,20 +3,16 @@
 ## Overview
 
 This phase focuses on capturing and analyzing network traffic generated during an SSH brute-force attack.
-
 The objective is to demonstrate the use of **Wireshark** as a network analysis tool and to examine the network-level characteristics of an SSH brute-force attack.
-
 The attack is performed from **Hades** against **Atlas**, while the network traffic is captured and subsequently analyzed using Wireshark on **Odin**.
 
-Unlike the previous phases, Wazuh is not used for analysis in this phase. The purpose of this phase is specifically to demonstrate network packet capture and analysis using Wireshark.
+Unlike the previous phases, Wazuh is not used for analysis in this phase. The purpose of this phase is specifically to demonstrate network packet capture and analysis using `Wireshark`.
 
 Devices involved:
 
 - **Hades** (Attacker) — `192.168.1.18`
 - **Atlas** (Target) — `192.168.1.7`
 - **Odin** (Network Analysis Workstation) — `192.168.1.12`
-
----
 
 ## Objectives
 
@@ -63,62 +59,36 @@ The following command was used:
 `hydra -l target -P /usr/share/wordlists/rockyou.txt ssh://192.168.1.7`
 
 Hydra generated repeated SSH authentication attempts against Atlas while tcpdump recorded the network traffic.
-
 After sufficient attack traffic had been generated, Hydra was stopped using:
-
 `Ctrl + C`
-
 This stopped the brute-force attack.
-
 ![Hydra attack from console](../images/hydra-console.png)
 
-
 ### Stop tcpdump
-
 The packet capture was then stopped using:
-
 `Ctrl + C`
-
 This caused tcpdump to close the capture and finalize the PCAP file.
-
 The resulting capture file was:
-
 `ssh-bruteforce.pcap`
-
 The PCAP file contains the packets captured by Hades during the attack.
-
-
-
 
 The following secure copy command was used to copy the .pcap file from Hades to Odin.
 ```bash
 scp hades:~/ssh-bruteforce.pcap ~/
 ```
 ### Verify the PCAP File
-
 The capture file was verified using:
-
 `ls -lh ssh-bruteforce.pcap`
-
 This command confirms that the PCAP file exists and displays its size.
-
 ![stop tcpdump](../images/stop-tcpdump.png)
 ## Wireshark Analysis
 
 The transferred ssh-bruteforce.pcap file was opened using Wireshark on Odin.
-
 Wireshark provided a graphical interface for examining the packets captured by tcpdump.
-
 The first Wireshark display filter used was:
-
 `ip.addr == 192.168.1.18 && ip.addr == 192.168.1.7`
-
-
 This filter displays packets involving both Hades and Atlas.
-
 ![Hades brute](../images/wireshark-ip.png)
-
-
 
 The addresses represent:
 
@@ -126,20 +96,15 @@ Hades  →  192.168.1.18
 Atlas  →  192.168.1.7
 
 The filter helped isolate traffic associated with the attacker and target from other packets that may have been present in the capture.
-
 The attacker and target addresses can also be combined with the SSH port filter:
-
 `ip.addr == 192.168.1.18 && ip.addr == 192.168.1.7 && tcp.port == 22`
-
 This produced a more focused view of SSH communication between Hades and Atlas.
 
 ![Wireshark SSH filter](../images/wireshark-ssh.png)
 
 The TCP connections associated with the SSH traffic were examined in Wireshark.
-
-TCP connection establishment uses a three-way handshake
+TCP connection establishment uses a three-way handshake:
 SYN , ACK and SYN/ACK
-
 Wireshark provided information including:
 
 Source IP address
@@ -154,7 +119,6 @@ TCP stream information
 
 This allowed the SSH traffic to be examined at the packet and transport layers.
 Because SSH encrypts its application-layer communication, the credentials being tested by Hydra were not visible as plaintext.
-
 The purpose of this analysis was therefore to examine the network behavior of the SSH connection rather than recover the passwords.
 
 ## Limitations
