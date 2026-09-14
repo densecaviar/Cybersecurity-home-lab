@@ -143,7 +143,7 @@ The relevant information included:
 Banned IP list: 192.168.1.18`
 
 ![Hades in jail](../images/Hades-in-jail.png)
-Figure 5. Hades listed as a banned IP address.
+Figure 6. Hades listed as a banned IP address.
 
 This provided direct evidence that Fail2Ban had automatically responded to the brute-force attack.
 
@@ -158,7 +158,7 @@ The purpose of this command was to determine whether the defensive control had s
 The connection was unsuccessful after the attacker IP had been banned.
 
 ![Hades refused](../images/Hades-refused.png)
-Figure 6. SSH connection attempt from Hades after the IP address was banned.
+Figure 7. SSH connection attempt from Hades after the IP address was banned.
 
 This demonstrated the practical effect of the Fail2Ban defense:an automated response rather than requiring an administrator to manually identify and block the attacker.
 
