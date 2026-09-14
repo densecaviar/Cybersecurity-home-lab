@@ -127,6 +127,7 @@ Fail2Ban then banned the address.
 Figure 4. Fail2Ban automatically banning the Hades attacker IP.
 
 ![Hades brute force disconnects](../images/Hades-disconnects.png)
+Figure 5. Hades attack gets disconnected.
 
 ## Verification of the Ban
 
@@ -149,7 +150,6 @@ This provided direct evidence that Fail2Ban had automatically responded to the b
 ## Verification of Access Blocking
 
 Attempt SSH Access from Hades
-
 After the ban was applied, an SSH connection was attempted from Hades:
 ```bash
 ssh target@192.168.1.7
@@ -159,6 +159,7 @@ The connection was unsuccessful after the attacker IP had been banned.
 
 ![Hades refused](../images/Hades-refused.png)
 Figure 6. SSH connection attempt from Hades after the IP address was banned.
+
 This demonstrated the practical effect of the Fail2Ban defense:an automated response rather than requiring an administrator to manually identify and block the attacker.
 
 The key difference between the two experiments was the presence of the Fail2Ban defensive control.
