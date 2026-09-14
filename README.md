@@ -101,4 +101,6 @@ This project demonstrates practical experience with:
 
 | [07 - SIEM Analysis with Wazuh](docs/07-SIEM-Analysis-with-Wazuh.md)        
 
-| [08 - Network Capture with Wireshark](docs/08-Network-Capture-with-Wireshark.md)                           
+| [08 - Network Capture with Wireshark](docs/08-Network-Capture-with-Wireshark.md)         
+
+| [09 - Fail2Ban Defense and Mitigation](docs/09-Fail2Ban-Defense-and-Mitigation.md)
