@@ -87,18 +87,18 @@ This project demonstrates practical experience with:
 
 
 # Project Phases
-| [01 - Network Configuration](docs/01-network-configuration.md)               
+| [01 - Network Configuration](docs/01-Network-Configuration.md)               
 
 | [02-SSH-Configuration-and-public-key-authentication.md](docs/02-SSH-Configuration-and-Public-Key-Authentication.md)                                                             
 
-| [03 - Network Reconnaissance](docs/03-network-reconnaissance.md)             
+| [03 - Network Reconnaissance](docs/03-Network-Reconnaissance.md)             
 
-| [04 - Vulnerability Assessment](docs/04-vulnerability-assessment.md)        
+| [04 - Vulnerability Assessment](docs/04-Vulnerability-Assessment.md)        
 
-| [05 - Linux Hardening](docs/05-linux-hardening.md)                           
+| [05 - Linux Hardening](docs/05-Linux-Hardening.md)                           
 
-| [06 - SSH Brute Force Attack](docs/06-ssh-brute-force.md)                       
+| [06 - SSH Brute Force Attack](docs/06-SSH-Brute-Force.md)                       
 
-| [07 - Network Traffic Analysis](docs/07-network-traffic-analysis.md)        
+| [07 - SIEM Analysis with Wazuh](docs/07-SIEM-Analysis-with-Wazuh.md)        
 
-| [08 - Incident Report](docs/08-incident-report.md)                           
+| [08 - Network Capture with Wireshark](docs/08-Network-Capture-with-Wireshark.md)                           
