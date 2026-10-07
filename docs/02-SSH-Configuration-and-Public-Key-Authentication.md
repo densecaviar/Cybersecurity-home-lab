@@ -1,3 +1,5 @@
+# SSH Configuration and Public Key Authentication
+
 ## Summary
 
 Configure secure remote administration for the laboratory using OpenSSH and ED25519 public key authentication. Password-based authentication is initially used to establish trust before transitioning to passwordless authentication using asymmetric cryptography. This phase also explains the underlying cryptographic concepts behind SSH authentication and secure communication.
