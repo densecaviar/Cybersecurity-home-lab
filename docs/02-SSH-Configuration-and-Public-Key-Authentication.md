@@ -1,4 +1,4 @@
-# SSH Configuration and Public Key Authentication
+# Phase 2 - SSH Configuration and Public Key Authentication
 
 ## Summary
 
