@@ -64,10 +64,12 @@ This lab uses three dedicated physical systems with distinct operational roles:
 - Nmap
 - Hydra
 - Wireshark
-- UFW
+- Uncomplicated Firewall (ufw)
 - Fail2Ban
+- Wazuh
+- tcpdump
+- journalctl
 
-*(More tools will be added as the project progresses.)*
 
 ## Skills Demonstrated
 
@@ -79,8 +81,8 @@ This project demonstrates practical experience with:
 - Public Key Authentication
 - Network Reconnaissance
 - Vulnerability Assessment
-- Password Auditing
 - Network Traffic Analysis
+- SIEM Detection and Response
 - Security Documentation
 - Incident Reporting
 
